@@ -48,12 +48,12 @@
                         <div class="author_container">
                             <div class="author_info_container">
                                 <label for="quantity" style = "color : white">Quantity</label>
-                                <input type="number" name="qantity" id="exp" min="0">
+                                <input type="number" name="quantity1" id="quantity" min="0">
                             </div>
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" value="Buy Now"></span>
+                            <span><input type="submit" name ="one" value="Buy Now"></span>
                         </div>
                     </div>
                 </div>
@@ -84,12 +84,12 @@
             <div class="author_container">
             <div class="author_info_container">
                 <label for="quantity" style = "color : white">Quantity</label>
-                <input type="number" name="qantity" id="exp" min="0">
+                <input type="number" name="qantity2" id="exp" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="two" value="Buy Now"></span>
             </div>
         </div>
     </div>
@@ -120,12 +120,12 @@
             <div class="author_container">
                 <div class="author_info_container">
                     <label for="quantity" style = "color : white">Quantity</label>
-                    <input type="number" name="qantity" id="exp" min="0">
+                    <input type="number" name="quantity3" id="exp" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="three" value="Buy Now"></span>
             </div>
           </div>
         </div>
@@ -156,12 +156,12 @@
                 <div class="author_container">
                     <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity4" id="exp" min="0">
             </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="four" value="Buy Now"></span>
             </div>
           </div>
         </div>
@@ -192,12 +192,12 @@
                 <div class="author_container">
                     <div class="author_info_container">
                         <label for="quantity" style = "color : white">Quantity</label>
-                        <input type="number" name="qantity" id="exp" min="0">
+                        <input type="number" name="quantity5" id="exp" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="five" value="Buy Now"></span>
                 </div>
           </div>
         </div>
@@ -228,12 +228,12 @@
             <div class="author_container">
                 <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity6" id="exp" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="six" value="Buy Now"></span>
             </div>
         </div>
     </div>
@@ -264,12 +264,12 @@
               <div class="author_container">
                   <div class="author_info_container">
                       <label for="quantity" style = "color : white">Quantity</label>
-                      <input type="number" name="qantity" id="exp" min="0">
+                      <input type="number" name="quantity7" id="exp" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="seven" value="Buy Now"></span>
                 </div>
           </div>
         </div>
@@ -300,12 +300,12 @@
             <div class="author_container">
             <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity8" id="exp" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="eight" value="Buy Now"></span>
             </div>
         </div>
     </div>
