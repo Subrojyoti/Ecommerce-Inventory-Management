@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Page</title>
+    <title>Footwear</title>
     <link rel="stylesheet" href="../css/pages.css" />
     <style>
 
@@ -12,11 +12,11 @@
     </style>
 </head>
   <body class="body_container">
-    <form action="../backend/electronics.php" method="post">
+    <form action="../backend/footwear.php" method="post">
 
         <div class="container">
             <header class="header_container">
-                <h1 class="header_title">Footwears</h1>
+                <h1 class="header_title">Footwear</h1>
                 <p class="header_desc">
                     Utilize this space to incorporate a captivating subheading crafted by
                     ChatGPT, adding depth and intrigue to your blog.
@@ -28,7 +28,7 @@
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="..\images\footwears\F-PROD001.jpg"
+                        src="../images/footwear/F-PROD001.jpg"
                         alt="card 1 image"
                         class="card_image"
                         loading="lazy"
@@ -48,12 +48,12 @@
                         <div class="author_container">
                             <div class="author_info_container">
                                 <label for="quantity" style = "color : white">Quantity</label>
-                                <input type="number" name="qantity" id="exp" min="0">
+                                <input type="number" name="quantity1" id="quantity" min="0">
                             </div>
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" value="Buy Now"></span>
+                            <span><input type="submit" name ="one" value="Buy Now"></span>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="../images/footwears/F-PROD002.jpg"
+                        src="../images/footwear/F-PROD002.jpg"
                         alt="card 2 image"
                         class="card_image"
                         loading="lazy"
@@ -84,12 +84,12 @@
             <div class="author_container">
             <div class="author_info_container">
                 <label for="quantity" style = "color : white">Quantity</label>
-                <input type="number" name="qantity" id="exp" min="0">
+                <input type="number" name="quantity2" id="quantity2" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="two" value="Buy Now"></span>
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
         <div class="card_container">
           <a href="#" class="card_image_container">
             <img
-              src="../images/footwears/F-PROD003.jpg"
+              src="../images/footwear/F-PROD003.jpg"
               alt="card 3 image"
               class="card_image"
               loading="lazy"
@@ -120,12 +120,12 @@
             <div class="author_container">
                 <div class="author_info_container">
                     <label for="quantity" style = "color : white">Quantity</label>
-                    <input type="number" name="qantity" id="exp" min="0">
+                    <input type="number" name="quantity3" id="quantity3" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="three" value="Buy Now"></span>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/footwears/F-PROD004.jpg"
+                src="../images/footwear/F-PROD004.jpg"
                 alt="card 4 image"
                 class="card_image"
                 loading="lazy"
@@ -156,12 +156,12 @@
                 <div class="author_container">
                     <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity4" id="quantity4" min="0">
             </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="four" value="Buy Now"></span>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/footwears/F-PROD005.jpg"
+                src="../images/footwear/F-PROD005.jpg"
                 alt="card 5 image"
                 class="card_image"
                 loading="lazy"
@@ -192,12 +192,12 @@
                 <div class="author_container">
                     <div class="author_info_container">
                         <label for="quantity" style = "color : white">Quantity</label>
-                        <input type="number" name="qantity" id="exp" min="0">
+                        <input type="number" name="quantity5" id="quantity5" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="five" value="Buy Now"></span>
                 </div>
           </div>
         </div>
@@ -208,7 +208,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="../images/footwears/F-PROD006.jpg"
+              src="../images/footwear/F-PROD006.jpg"
               alt="card 6 image"
               class="card_image"
               loading="lazy"
@@ -228,12 +228,12 @@
             <div class="author_container">
                 <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity6" id="quantity6" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="six" value="Buy Now"></span>
             </div>
         </div>
     </div>
@@ -244,7 +244,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/footwears/F-PROD007.jpg"
+                src="../images/footwear/F-PROD007.jpg"
                 alt="card 7 image"
                 class="card_image"
                 loading="lazy"
@@ -264,12 +264,12 @@
               <div class="author_container">
                   <div class="author_info_container">
                       <label for="quantity" style = "color : white">Quantity</label>
-                      <input type="number" name="qantity" id="exp" min="0">
+                      <input type="number" name="quantity7" id="quantity7" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="seven" value="Buy Now"></span>
                 </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="../images/footwears/F-PROD008.jpg"
+              src="../images/footwear/F-PROD008.jpg"
               alt="card 8 image"
               class="card_image"
               loading="lazy"
@@ -300,12 +300,12 @@
             <div class="author_container">
             <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity8" id="quantity8" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="eight" value="Buy Now"></span>
             </div>
         </div>
     </div>

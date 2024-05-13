@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Page</title>
+    <title>Electronics</title>
     <link rel="stylesheet" href="../css/pages.css" />
     <style>
 
@@ -28,7 +28,7 @@
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="https://source.unsplash.com/random/600×400?healthy"
+                        src="../images/electronics/E-PROD001.jpg"
                         alt="card 1 image"
                         class="card_image"
                         loading="lazy"
@@ -64,7 +64,7 @@
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="https://source.unsplash.com/random/600×400?technology"
+                        src="../images/electronics/E-PROD002.jpg"
                         alt="card 2 image"
                         class="card_image"
                         loading="lazy"
@@ -84,7 +84,7 @@
             <div class="author_container">
             <div class="author_info_container">
                 <label for="quantity" style = "color : white">Quantity</label>
-                <input type="number" name="qantity2" id="exp" min="0">
+                <input type="number" name="quantity2" id="quantity2" min="0">
               </div>
             </div>
             
@@ -100,7 +100,7 @@
         <div class="card_container">
           <a href="#" class="card_image_container">
             <img
-              src="https://source.unsplash.com/random/600×400?sport"
+              src="../images/electronics/E-PROD003.jpg"
               alt="card 3 image"
               class="card_image"
               loading="lazy"
@@ -120,7 +120,7 @@
             <div class="author_container">
                 <div class="author_info_container">
                     <label for="quantity" style = "color : white">Quantity</label>
-                    <input type="number" name="quantity3" id="exp" min="0">
+                    <input type="number" name="quantity3" id="quantity3" min="0">
               </div>
             </div>
 
@@ -136,7 +136,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="https://source.unsplash.com/random/600×400?art"
+                src="../images/electronics/E-PROD004.jpg"
                 alt="card 4 image"
                 class="card_image"
                 loading="lazy"
@@ -156,7 +156,7 @@
                 <div class="author_container">
                     <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="quantity4" id="exp" min="0">
+              <input type="number" name="quantity4" id="quantity4" min="0">
             </div>
             </div>
 
@@ -172,7 +172,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="https://source.unsplash.com/random/600×400?ghost"
+                src="../images/electronics/E-PROD005.jpg"
                 alt="card 5 image"
                 class="card_image"
                 loading="lazy"
@@ -192,7 +192,7 @@
                 <div class="author_container">
                     <div class="author_info_container">
                         <label for="quantity" style = "color : white">Quantity</label>
-                        <input type="number" name="quantity5" id="exp" min="0">
+                        <input type="number" name="quantity5" id="quantity5" min="0">
                     </div>
                 </div>
                 
@@ -208,7 +208,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="https://source.unsplash.com/random/600×400?film"
+              src="../images/electronics/E-PROD006.jpg"
               alt="card 6 image"
               class="card_image"
               loading="lazy"
@@ -228,7 +228,7 @@
             <div class="author_container">
                 <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="quantity6" id="exp" min="0">
+              <input type="number" name="quantity6" id="quantity6" min="0">
               </div>
             </div>
             
@@ -244,7 +244,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="https://source.unsplash.com/random/600×400?scam"
+                src="../images/electronics/E-PROD007.jpg"
                 alt="card 7 image"
                 class="card_image"
                 loading="lazy"
@@ -264,7 +264,7 @@
               <div class="author_container">
                   <div class="author_info_container">
                       <label for="quantity" style = "color : white">Quantity</label>
-                      <input type="number" name="quantity7" id="exp" min="0">
+                      <input type="number" name="quantity7" id="quantity7" min="0">
                     </div>
                 </div>
                 
@@ -280,7 +280,7 @@
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="https://source.unsplash.com/random/600×400?dogs"
+              src="../images/electronics/E-PROD008.jpg"
               alt="card 8 image"
               class="card_image"
               loading="lazy"
@@ -300,7 +300,7 @@
             <div class="author_container">
             <div class="author_info_container">
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="quantity8" id="exp" min="0">
+              <input type="number" name="quantity8" id="quantity8" min="0">
               </div>
             </div>
 
