@@ -31,6 +31,9 @@
                             <a class="dropdown-item" href="footwear.php">Footwears</a>
                         </div>
                     </li>
+                    <li class = "nav-item">
+                        <a class="nav-link" href="#">Order History</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sign out</a>
                     </li>

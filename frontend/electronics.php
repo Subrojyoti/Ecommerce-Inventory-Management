@@ -1,3 +1,6 @@
+<?php
+    include "../backend/utilities.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,10 +40,16 @@
                     
                     <div class="card_title_container">
                         <a href="#" class="card_title_link">
-                            <h2 class="card_title">Healthy Diets</h2>
+                            <h2 class="card_title">
+                                <?php
+                                    echo  fetch_product(0)['product_name'];
+                                ?>
+                            </h2>
                         </a>
                         <p class="card_desc">
-                            Healthy diets you need to follow in order to lead a healthy lifestyle
+                            <?php
+                                echo  fetch_product(0)['product_description'];
+                            ?>
                         </p>
                     </div>
                     
