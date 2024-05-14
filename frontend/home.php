@@ -1,4 +1,7 @@
 <!-- index.html -->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,10 +35,15 @@
                         </div>
                     </li>
                     <li class = "nav-item">
-                        <a class="nav-link" href="#">Order History</a>
+                        <a class="nav-link" href="order_history.php">Order History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign out</a>
+                        <a class = "nav-link">
+                        <form action ="../backend/utilities.php" method="post">
+                            <input type="submit" value = "logout" name = "logout">
+                        </form>
+                        </a>
+                        <!-- <a class="nav-link" href="#">Sign out</a> -->
                     </li>
                 </ul>
             </div>
@@ -43,9 +51,17 @@
     </header>
 
     <!-- Big Wall Poster -->
-    <section class="poster">
+<section class="poster">
+    <div class="overlay">
+        <div class="welcome-text">
+            <?php
+                echo "Welcome ".$_SESSION['username'].' !';
+            ?>
+        </div>
         <img src="../images/for_home/home-poster.jpg" alt="Big Wall Poster">
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer Section -->
     <footer class="footer">

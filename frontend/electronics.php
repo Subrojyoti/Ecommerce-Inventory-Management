@@ -56,6 +56,12 @@
                     <div class="card_footer_container">
                         <div class="author_container">
                             <div class="author_info_container">
+                            <span style="color: white;">
+
+                                <?php
+                                echo "Price: ".fetch_product(0)['price'];
+                                ?>
+                                </span>
                                 <label for="quantity" style = "color : white">Quantity</label>
                                 <input type="number" name="quantity1" id="quantity" min="0">
                             </div>
@@ -82,16 +88,28 @@
                     
                     <div class="card_title_container">
                         <a href="#" class="card_title_link">
-                            <h2 class="card_title">Technological Advances</h2>
+                            <h2 class="card_title">
+                            <?php
+                                echo  fetch_product(1)['product_name'];
+                            ?>
+                            </h2>
             </a>
             <p class="card_desc">
-                New technogical innovations that could reform a new world
+                <?php
+                    echo  fetch_product(1)['product_description'];
+                ?>
             </p>
         </div>
         
           <div class="card_footer_container">
             <div class="author_container">
             <div class="author_info_container">
+                <span style="color: white;">
+
+                    <?php
+                    echo "Price: ".fetch_product(1)['price'];
+                    ?>
+                </span>
                 <label for="quantity" style = "color : white">Quantity</label>
                 <input type="number" name="quantity2" id="quantity2" min="0">
               </div>
@@ -118,16 +136,28 @@
 
           <div class="card_title_container">
             <a href="#" class="card_title_link">
-                <h2 class="card_title">Game On!</h2>
+                <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(2)['product_name'];
+                    ?>
+                </h2>
             </a>
             <p class="card_desc">
-                Find out which nations won the most Gold medals
+                <?php
+                    echo  fetch_product(2)['product_description'];
+                ?>
             </p>
         </div>
         
           <div class="card_footer_container">
             <div class="author_container">
                 <div class="author_info_container">
+                <span style="color: white;">
+
+                    <?php
+                    echo "Price: ".fetch_product(2)['price'];
+                    ?>
+                    </span>
                     <label for="quantity" style = "color : white">Quantity</label>
                     <input type="number" name="quantity3" id="quantity3" min="0">
               </div>
@@ -154,16 +184,28 @@
             
             <div class="card_title_container">
                 <a href="#" class="card_title_link">
-                    <h2 class="card_title">The Extraordinary Art</h2>
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(3)['product_name'];
+                        ?>
+                    </h2>
                 </a>
                 <p class="card_desc">
-                    Check out some extraordinary art collection
+                    <?php
+                        echo  fetch_product(3)['product_description'];
+                    ?>
                 </p>
             </div>
             
             <div class="card_footer_container">
                 <div class="author_container">
                     <div class="author_info_container">
+                    <span style="color: white;">
+
+                        <?php
+                        echo "Price: ".fetch_product(3)['price'];
+                        ?>
+                        </span>
               <label for="quantity" style = "color : white">Quantity</label>
               <input type="number" name="quantity4" id="quantity4" min="0">
             </div>
@@ -190,16 +232,28 @@
             
             <div class="card_title_container">
                 <a href="#" class="card_title_link">
-                    <h2 class="card_title">Ghost sightings</h2>
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(4)['product_name'];
+                        ?>
+                    </h2>
                 </a>
                 <p class="card_desc">
-                    Here are some of the ghost sightings that were done in your area
+                <?php
+                    echo  fetch_product(4)['product_description'];
+                ?>
                 </p>
             </div>
             
             <div class="card_footer_container">
                 <div class="author_container">
                     <div class="author_info_container">
+                    <span style="color: white;">
+
+                    <?php
+                    echo "Price: ".fetch_product(4)['price'];
+                    ?>
+                    </span>
                         <label for="quantity" style = "color : white">Quantity</label>
                         <input type="number" name="quantity5" id="quantity5" min="0">
                     </div>
@@ -226,16 +280,28 @@
 
           <div class="card_title_container">
             <a href="#" class="card_title_link">
-              <h2 class="card_title">Film Making</h2>
+              <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(5)['product_name'];
+                    ?>
+              </h2>
             </a>
             <p class="card_desc">
-                Some of the stories behind crazy film making
+                <?php
+                    echo  fetch_product(5)['product_description'];
+                ?>
             </p>
         </div>
         
           <div class="card_footer_container">
             <div class="author_container">
                 <div class="author_info_container">
+                <span style="color: white;">
+
+                <?php
+                echo "Price: ".fetch_product(5)['price'];
+                ?>
+                </span>
               <label for="quantity" style = "color : white">Quantity</label>
               <input type="number" name="quantity6" id="quantity6" min="0">
               </div>
@@ -262,16 +328,28 @@
             
             <div class="card_title_container">
                 <a href="#" class="card_title_link">
-                    <h2 class="card_title">The Scams</h2>
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(6)['product_name'];
+                        ?>
+                    </h2>
                 </a>
                 <p class="card_desc">
-                    Here are some of the stories behind big scams
+                    <?php
+                        echo  fetch_product(6)['product_description'];
+                    ?>
                 </p>
           </div>
           
           <div class="card_footer_container">
               <div class="author_container">
                   <div class="author_info_container">
+                  <span style="color: white;">
+
+                    <?php
+                    echo "Price: ".fetch_product(7)['price'];
+                    ?>
+                    </span>
                       <label for="quantity" style = "color : white">Quantity</label>
                       <input type="number" name="quantity7" id="quantity7" min="0">
                     </div>
@@ -298,16 +376,28 @@
           
           <div class="card_title_container">
               <a href="#" class="card_title_link">
-                  <h2 class="card_title">Dogs</h2>
+                  <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(7)['product_name'];
+                    ?>
+                  </h2>
                 </a>
             <p class="card_desc">
-              Dog breeds that could potentially die due to climate change
+                <?php
+                    echo  fetch_product(7)['product_description'];
+                ?>
             </p>
           </div>
 
           <div class="card_footer_container">
             <div class="author_container">
             <div class="author_info_container">
+            <span style="color: white;">
+
+            <?php
+            echo "Price: ".fetch_product(7)['price'];
+            ?>
+            </span>
               <label for="quantity" style = "color : white">Quantity</label>
               <input type="number" name="quantity8" id="quantity8" min="0">
               </div>

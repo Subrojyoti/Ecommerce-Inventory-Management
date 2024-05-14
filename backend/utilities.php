@@ -1,6 +1,10 @@
 <?php
 
-
+session_start();
+if(isset($_POST['logout'])){
+    session_destroy();
+    header("Location: ../index.php");
+}
 function update_available($btn, $value){
     include "connect.php";
     // echo $btn." ".$value;
@@ -82,6 +86,11 @@ function update_available($btn, $value){
             $p_id = $p_items[23];
             break;
     }
+    $price = fetch_product($btn -1)['price'];
+    $total = $value * $price;
+    // echo $_SESSION['username'];
+    // $sql = "INSERT INTO order_history (username, product_id, quantity, price, total)
+    //         VALUES ($_SESSION['username'], $p_id, $value, $price, $total);";
     $query = "UPDATE product_availability SET currently_available = currently_available - $value WHERE product_id = '$p_id';";
     $statement = $conn->prepare($query);
     $statement->execute();
@@ -119,6 +128,59 @@ function fetch_product($i_num){
         return "Invalid product index";
     }
 }
-// echo fetch_price(3)['product_name'];
-// echo fetch_price(3)['price'];
+
+function validate($user_name, $passwd){
+    include "connect.php";
+    
+    $query = "SELECT username, passwd FROM users WHERE username = :username AND passwd = :passwd";
+    $statement = $conn->prepare($query);
+    $statement->bindParam(':username', $user_name);
+    $statement->bindParam(':passwd', $passwd);
+    
+    try {
+        $statement->execute();
+        
+        // Fetch the result
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        
+        if($result !== false){ // Check if any rows were returned
+            if($result['username'] == 'MANAGER'){
+                echo "Login Succesful";
+            }
+            // Perform further actions based on the result
+            else{
+                header("Location: ../frontend/home.php");
+            }
+        } else {
+            echo "Wrong username or password";
+        }
+        $_SESSION['username'] = $user_name;
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+
+function insert($first, $last, $user_id, $pass){
+    include "connect.php";
+    if($user_id != "MANAGER"){
+      $name = $first." ".$last;
+      $sql = "INSERT INTO users (name, username, passwd)
+      VALUES ('$name', '$user_id', '$pass')";
+      try {
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // use exec() because no results are returned
+        $conn->exec($sql);
+        echo "New record created successfully";
+        header("Location: ../index.php");
+      } catch(PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+      }
+    }
+    else{
+      echo "Username cannot be created<br>";
+    }
+      
+  }
+
 ?>
