@@ -15,7 +15,7 @@
     </style>
 </head>
   <body class="body_container">
-    <form action="../backend/electronics.php" method="post">
+    <form action="../backend/manage_electronics.php" method="post">
 
         <div class="container">
             <header class="header_container">
@@ -68,7 +68,7 @@
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" name ="one" value="Refill"></span>
+                            <span><input type="submit" name ="one" value="Restock"></span>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" name ="two" value="Refill"></span>
+                <span><input type="submit" name ="two" value="Restock"></span>
             </div>
         </div>
     </div>
@@ -164,7 +164,7 @@
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" name ="three" value="Refill"></span>
+                <span><input type="submit" name ="three" value="Restock"></span>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" name ="four" value="Refill"></span>
+                <span><input type="submit" name ="four" value="Restock"></span>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" name ="five" value="Refill"></span>
+                    <span><input type="submit" name ="five" value="Restock"></span>
                 </div>
           </div>
         </div>
@@ -308,7 +308,7 @@
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" name ="six" value="Refill"></span>
+                <span><input type="submit" name ="six" value="Restock"></span>
             </div>
         </div>
     </div>
@@ -356,7 +356,7 @@
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" name ="seven" value="Refill"></span>
+                    <span><input type="submit" name ="seven" value="Restock"></span>
                 </div>
           </div>
         </div>
@@ -404,7 +404,7 @@
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" name ="eight" value="Refill"></span>
+                <span><input type="submit" name ="eight" value="Restock"></span>
             </div>
         </div>
     </div>

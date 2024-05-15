@@ -68,7 +68,8 @@
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" name ="one" value="Buy Now"></span>
+
+                                <span><input type="submit" name ="one" value="Buy Now"></span>
                         </div>
                     </div>
                 </div>

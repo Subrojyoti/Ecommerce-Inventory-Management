@@ -7,12 +7,12 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
         <link rel="stylesheet" href="../css/register.css">
-		<title>Registration Form</title>
+		<title>Registration</title>
 	</head>
 
 	<body>
 		<div class="main">
-			<h2>Registration Form</h2>
+			<h2>Sign Up Here !</h2>
 			<form action="../backend/register.php" method="post">
 				<label for="first"
 					>First Name:</label

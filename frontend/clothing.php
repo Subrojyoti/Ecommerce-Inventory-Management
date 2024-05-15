@@ -15,7 +15,7 @@ include "../backend/utilities.php";
     </style>
 </head>
   <body class="body_container">
-    <form action="../backend/electronics.php" method="post">
+    <form action="../backend/clothing.php" method="post">
 
         <div class="container">
             <header class="header_container">

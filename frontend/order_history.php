@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +84,8 @@
         include '../backend/connect.php'; // Replace 'db_connection.php' with your database connection file
 
         // Fetch order history data from the database
-        $sql = "SELECT * FROM order_history";
+        $sql = "SELECT * FROM order_history WHERE username = '{$_SESSION['username']}'";
+
         $result = $conn->query($sql);
 
         // Check if there are any orders

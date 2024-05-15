@@ -15,11 +15,11 @@ include "../backend/utilities.php";
     </style>
 </head>
   <body class="body_container">
-    <form action="../backend/electronics.php" method="post">
+    <form action="../backend/manage_clothing.php" method="post">
 
         <div class="container">
             <header class="header_container">
-                <h1 class="header_title">Clothing</h1>
+                <h1 class="header_title">Manage Clothing</h1>
                 <p class="header_desc">
                     Utilize this space to incorporate a captivating subheading crafted by
                     ChatGPT, adding depth and intrigue to your blog.
@@ -68,7 +68,7 @@ include "../backend/utilities.php";
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" value="Refill"></span>
+                            <span><input type="submit" value="Restock"></span>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ include "../backend/utilities.php";
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Refill"></span>
+                <span><input type="submit" value="Restock"></span>
             </div>
         </div>
     </div>
@@ -164,7 +164,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Refill"></span>
+                <span><input type="submit" value="Restock"></span>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Refill"></span>
+                <span><input type="submit" value="Restock"></span>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ include "../backend/utilities.php";
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Refill"></span>
+                    <span><input type="submit" value="Restock"></span>
                 </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ include "../backend/utilities.php";
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Refill"></span>
+                <span><input type="submit" value="Restock"></span>
             </div>
         </div>
     </div>
@@ -356,7 +356,7 @@ include "../backend/utilities.php";
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Refill"></span>
+                    <span><input type="submit" value="Restock"></span>
                 </div>
           </div>
         </div>
@@ -404,7 +404,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Refill"></span>
+                <span><input type="submit" value="Restock"></span>
             </div>
         </div>
     </div>
