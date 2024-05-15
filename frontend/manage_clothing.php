@@ -68,7 +68,7 @@ include "../backend/utilities.php";
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" value="Buy Now"></span>
+                            <span><input type="submit" value="Refill"></span>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ include "../backend/utilities.php";
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" value="Refill"></span>
             </div>
         </div>
     </div>
@@ -164,7 +164,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" value="Refill"></span>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" value="Refill"></span>
             </div>
           </div>
         </div>
@@ -260,7 +260,7 @@ include "../backend/utilities.php";
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" value="Refill"></span>
                 </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ include "../backend/utilities.php";
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" value="Refill"></span>
             </div>
         </div>
     </div>
@@ -356,7 +356,7 @@ include "../backend/utilities.php";
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" value="Refill"></span>
                 </div>
           </div>
         </div>
@@ -404,7 +404,7 @@ include "../backend/utilities.php";
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" value="Refill"></span>
             </div>
         </div>
     </div>

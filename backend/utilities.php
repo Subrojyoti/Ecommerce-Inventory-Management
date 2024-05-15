@@ -88,13 +88,16 @@ function update_available($btn, $value){
     }
     $price = fetch_product($btn -1)['price'];
     $total = $value * $price;
-    // echo $_SESSION['username'];
-    // $sql = "INSERT INTO order_history (username, product_id, quantity, price, total)
-    //         VALUES ($_SESSION['username'], $p_id, $value, $price, $total);";
+    $product = fetch_product($btn -1)['product_name'];
+    $sql = "INSERT INTO order_history (username, product_id, product_name, quantity, price, total) 
+        VALUES ('" . $_SESSION['username'] . "', '$p_id', '$product', $value, $price, $total);";
+
+    $conn->exec($sql);
     $query = "UPDATE product_availability SET currently_available = currently_available - $value WHERE product_id = '$p_id';";
     $statement = $conn->prepare($query);
     $statement->execute();
 }
+
 
 function fetch_product($i_num){
     include "connect.php";
@@ -111,13 +114,11 @@ function fetch_product($i_num){
         $statement = $conn->prepare($query);
         $statement->bindParam(':product_id', $product_id);
         $statement->execute();
-        
         // Fetch the result
         $result = $statement->fetch(PDO::FETCH_ASSOC);
-        
         // Check if result is not empty
+        //     Return the price
         if ($result) {
-            // Return the price
             return $result;
         } else {
             // Handle case where no result is found
@@ -146,6 +147,7 @@ function validate($user_name, $passwd){
         if($result !== false){ // Check if any rows were returned
             if($result['username'] == 'MANAGER'){
                 echo "Login Succesful";
+                header("Location: ../frontend/manager.php");
             }
             // Perform further actions based on the result
             else{
@@ -155,6 +157,7 @@ function validate($user_name, $passwd){
             echo "Wrong username or password";
         }
         $_SESSION['username'] = $user_name;
+        // echo $_SESSION['username'];
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
@@ -182,5 +185,6 @@ function insert($first, $last, $user_id, $pass){
     }
       
   }
+
 
 ?>

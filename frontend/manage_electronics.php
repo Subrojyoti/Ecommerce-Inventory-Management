@@ -1,12 +1,12 @@
 <?php
-include "../backend/utilities.php";
+    include "../backend/utilities.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Page</title>
+    <title>Electronics</title>
     <link rel="stylesheet" href="../css/pages.css" />
     <style>
 
@@ -19,7 +19,7 @@ include "../backend/utilities.php";
 
         <div class="container">
             <header class="header_container">
-                <h1 class="header_title">Clothing</h1>
+                <h1 class="header_title">Electronics</h1>
                 <p class="header_desc">
                     Utilize this space to incorporate a captivating subheading crafted by
                     ChatGPT, adding depth and intrigue to your blog.
@@ -31,7 +31,7 @@ include "../backend/utilities.php";
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="../images/clothing/C-PROD001.jpg"
+                        src="../images/electronics/E-PROD001.jpg"
                         alt="card 1 image"
                         class="card_image"
                         loading="lazy"
@@ -39,16 +39,16 @@ include "../backend/utilities.php";
                     </a>
                     
                     <div class="card_title_container">
-                    <a href="#" class="card_title_link">
+                        <a href="#" class="card_title_link">
                             <h2 class="card_title">
                                 <?php
-                                    echo  fetch_product(16)['product_name'];
+                                    echo  fetch_product(0)['product_name'];
                                 ?>
                             </h2>
                         </a>
                         <p class="card_desc">
                             <?php
-                                echo  fetch_product(16)['product_description'];
+                                echo  fetch_product(0)['product_description'];
                             ?>
                         </p>
                     </div>
@@ -58,17 +58,17 @@ include "../backend/utilities.php";
                             <div class="author_info_container">
                             <span style="color: white;">
 
-                            <?php
-                            echo "Price: ".fetch_product(16)['price'];
-                            ?>
-                            </span>
+                                <?php
+                                echo "Price: ".fetch_product(0)['price'];
+                                ?>
+                                </span>
                                 <label for="quantity" style = "color : white">Quantity</label>
-                                <input type="number" name="qantity" id="exp" min="0">
+                                <input type="number" name="quantity1" id="quantity" min="0">
                             </div>
                         </div>
                         
                         <div class="card_tag_container">
-                            <span><input type="submit" value="Buy Now"></span>
+                            <span><input type="submit" name ="one" value="Refill"></span>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ include "../backend/utilities.php";
                 <div class="card_container">
                     <a href="#" class="card_image_container">
                         <img
-                        src="../images/clothing/C-PROD002.jpg"
+                        src="../images/electronics/E-PROD002.jpg"
                         alt="card 2 image"
                         class="card_image"
                         loading="lazy"
@@ -87,36 +87,36 @@ include "../backend/utilities.php";
                     </a>
                     
                     <div class="card_title_container">
-                    <a href="#" class="card_title_link">
+                        <a href="#" class="card_title_link">
                             <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(17)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
                             <?php
-                                echo  fetch_product(17)['product_description'];
+                                echo  fetch_product(1)['product_name'];
                             ?>
-                        </p>
+                            </h2>
+            </a>
+            <p class="card_desc">
+                <?php
+                    echo  fetch_product(1)['product_description'];
+                ?>
+            </p>
         </div>
         
           <div class="card_footer_container">
             <div class="author_container">
             <div class="author_info_container">
-            <span style="color: white;">
+                <span style="color: white;">
 
-            <?php
-            echo "Price: ".fetch_product(17)['price'];
-            ?>
-            </span>
+                    <?php
+                    echo "Price: ".fetch_product(1)['price'];
+                    ?>
+                </span>
                 <label for="quantity" style = "color : white">Quantity</label>
-                <input type="number" name="qantity" id="exp" min="0">
+                <input type="number" name="quantity2" id="quantity2" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="two" value="Refill"></span>
             </div>
         </div>
     </div>
@@ -127,7 +127,7 @@ include "../backend/utilities.php";
         <div class="card_container">
           <a href="#" class="card_image_container">
             <img
-              src="../images/clothing/C-PROD003.jpg"
+              src="../images/electronics/E-PROD003.jpg"
               alt="card 3 image"
               class="card_image"
               loading="lazy"
@@ -135,18 +135,18 @@ include "../backend/utilities.php";
           </a>
 
           <div class="card_title_container">
-          <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(18)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(18)['product_description'];
-                            ?>
-                        </p>
+            <a href="#" class="card_title_link">
+                <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(2)['product_name'];
+                    ?>
+                </h2>
+            </a>
+            <p class="card_desc">
+                <?php
+                    echo  fetch_product(2)['product_description'];
+                ?>
+            </p>
         </div>
         
           <div class="card_footer_container">
@@ -154,17 +154,17 @@ include "../backend/utilities.php";
                 <div class="author_info_container">
                 <span style="color: white;">
 
-                <?php
-                echo "Price: ".fetch_product(18)['price'];
-                ?>
-                </span>
+                    <?php
+                    echo "Price: ".fetch_product(2)['price'];
+                    ?>
+                    </span>
                     <label for="quantity" style = "color : white">Quantity</label>
-                    <input type="number" name="qantity" id="exp" min="0">
+                    <input type="number" name="quantity3" id="quantity3" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="three" value="Refill"></span>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ include "../backend/utilities.php";
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/clothing/C-PROD004.jpg"
+                src="../images/electronics/E-PROD004.jpg"
                 alt="card 4 image"
                 class="card_image"
                 loading="lazy"
@@ -183,18 +183,18 @@ include "../backend/utilities.php";
             </a>
             
             <div class="card_title_container">
-            <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(19)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(19)['product_description'];
-                            ?>
-                        </p>
+                <a href="#" class="card_title_link">
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(3)['product_name'];
+                        ?>
+                    </h2>
+                </a>
+                <p class="card_desc">
+                    <?php
+                        echo  fetch_product(3)['product_description'];
+                    ?>
+                </p>
             </div>
             
             <div class="card_footer_container">
@@ -202,17 +202,17 @@ include "../backend/utilities.php";
                     <div class="author_info_container">
                     <span style="color: white;">
 
-                    <?php
-                    echo "Price: ".fetch_product(19)['price'];
-                    ?>
-                    </span>
+                        <?php
+                        echo "Price: ".fetch_product(3)['price'];
+                        ?>
+                        </span>
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity4" id="quantity4" min="0">
             </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="four" value="Refill"></span>
             </div>
           </div>
         </div>
@@ -223,7 +223,7 @@ include "../backend/utilities.php";
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/clothing/C-PROD005.jpg"
+                src="../images/electronics/E-PROD005.jpg"
                 alt="card 5 image"
                 class="card_image"
                 loading="lazy"
@@ -231,18 +231,18 @@ include "../backend/utilities.php";
             </a>
             
             <div class="card_title_container">
-            <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(20)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(20)['product_description'];
-                            ?>
-                        </p>
+                <a href="#" class="card_title_link">
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(4)['product_name'];
+                        ?>
+                    </h2>
+                </a>
+                <p class="card_desc">
+                <?php
+                    echo  fetch_product(4)['product_description'];
+                ?>
+                </p>
             </div>
             
             <div class="card_footer_container">
@@ -251,16 +251,16 @@ include "../backend/utilities.php";
                     <span style="color: white;">
 
                     <?php
-                    echo "Price: ".fetch_product(20)['price'];
+                    echo "Price: ".fetch_product(4)['price'];
                     ?>
                     </span>
                         <label for="quantity" style = "color : white">Quantity</label>
-                        <input type="number" name="qantity" id="exp" min="0">
+                        <input type="number" name="quantity5" id="quantity5" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="five" value="Refill"></span>
                 </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ include "../backend/utilities.php";
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="../images/clothing/C-PROD006.jpg"
+              src="../images/electronics/E-PROD006.jpg"
               alt="card 6 image"
               class="card_image"
               loading="lazy"
@@ -279,18 +279,18 @@ include "../backend/utilities.php";
           </a>
 
           <div class="card_title_container">
-          <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(21)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(21)['product_description'];
-                            ?>
-                        </p>
+            <a href="#" class="card_title_link">
+              <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(5)['product_name'];
+                    ?>
+              </h2>
+            </a>
+            <p class="card_desc">
+                <?php
+                    echo  fetch_product(5)['product_description'];
+                ?>
+            </p>
         </div>
         
           <div class="card_footer_container">
@@ -299,16 +299,16 @@ include "../backend/utilities.php";
                 <span style="color: white;">
 
                 <?php
-                echo "Price: ".fetch_product(22)['price'];
+                echo "Price: ".fetch_product(5)['price'];
                 ?>
                 </span>
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity6" id="quantity6" min="0">
               </div>
             </div>
             
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="six" value="Refill"></span>
             </div>
         </div>
     </div>
@@ -319,7 +319,7 @@ include "../backend/utilities.php";
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-                src="../images/clothing/C-PROD007.jpg"
+                src="../images/electronics/E-PROD007.jpg"
                 alt="card 7 image"
                 class="card_image"
                 loading="lazy"
@@ -327,18 +327,18 @@ include "../backend/utilities.php";
             </a>
             
             <div class="card_title_container">
-            <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(22)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(22)['product_description'];
-                            ?>
-                        </p>
+                <a href="#" class="card_title_link">
+                    <h2 class="card_title">
+                        <?php
+                            echo  fetch_product(6)['product_name'];
+                        ?>
+                    </h2>
+                </a>
+                <p class="card_desc">
+                    <?php
+                        echo  fetch_product(6)['product_description'];
+                    ?>
+                </p>
           </div>
           
           <div class="card_footer_container">
@@ -347,16 +347,16 @@ include "../backend/utilities.php";
                   <span style="color: white;">
 
                     <?php
-                    echo "Price: ".fetch_product(23)['price'];
+                    echo "Price: ".fetch_product(7)['price'];
                     ?>
                     </span>
                       <label for="quantity" style = "color : white">Quantity</label>
-                      <input type="number" name="qantity" id="exp" min="0">
+                      <input type="number" name="quantity7" id="quantity7" min="0">
                     </div>
                 </div>
                 
                 <div class="card_tag_container">
-                    <span><input type="submit" value="Buy Now"></span>
+                    <span><input type="submit" name ="seven" value="Refill"></span>
                 </div>
           </div>
         </div>
@@ -367,7 +367,7 @@ include "../backend/utilities.php";
         <div class="card_container">
             <a href="#" class="card_image_container">
                 <img
-              src="../images/clothing/C-PROD008.jpg"
+              src="../images/electronics/E-PROD008.jpg"
               alt="card 8 image"
               class="card_image"
               loading="lazy"
@@ -375,18 +375,18 @@ include "../backend/utilities.php";
           </a>
           
           <div class="card_title_container">
-          <a href="#" class="card_title_link">
-                            <h2 class="card_title">
-                                <?php
-                                    echo  fetch_product(23)['product_name'];
-                                ?>
-                            </h2>
-                        </a>
-                        <p class="card_desc">
-                            <?php
-                                echo  fetch_product(23)['product_description'];
-                            ?>
-                        </p>
+              <a href="#" class="card_title_link">
+                  <h2 class="card_title">
+                    <?php
+                        echo  fetch_product(7)['product_name'];
+                    ?>
+                  </h2>
+                </a>
+            <p class="card_desc">
+                <?php
+                    echo  fetch_product(7)['product_description'];
+                ?>
+            </p>
           </div>
 
           <div class="card_footer_container">
@@ -395,16 +395,16 @@ include "../backend/utilities.php";
             <span style="color: white;">
 
             <?php
-            echo "Price: ".fetch_product(23)['price'];
+            echo "Price: ".fetch_product(7)['price'];
             ?>
             </span>
               <label for="quantity" style = "color : white">Quantity</label>
-              <input type="number" name="qantity" id="exp" min="0">
+              <input type="number" name="quantity8" id="quantity8" min="0">
               </div>
             </div>
 
             <div class="card_tag_container">
-                <span><input type="submit" value="Buy Now"></span>
+                <span><input type="submit" name ="eight" value="Refill"></span>
             </div>
         </div>
     </div>
